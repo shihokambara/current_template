@@ -1,12 +1,12 @@
 <div class='current_template-container' >
   <small>CurrentTemplateViewer</small>
   <p class='current_template-inner'>
-  Template: <%= "#{`tail log/development.log`}".scan(/\s[a-z]+\/\S+/) %>
+  Template: <%= "#{`tail log/development.log`}".scan(/\s[a-z]+\/\S+[erb|haml]$/) %>
   </p>
 </div>
 <style>
 .current_template-container{
-  max-width: 400px;
+  max-width: 450px;
 	position: fixed;
 	bottom: 10px;
 	background: green;
