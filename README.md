@@ -6,15 +6,11 @@ Display name of the current template file, including partial template.
 
 ## Feature
 
-It gets template information from log/development.log!
+This gem inspects log/development.log and gets partial name from it!
 It doesn't override any method!
 
-log/development.logからレンラリングしているテンプレートを取得していますので、
-シンプル・軽量です。renderメソッドなどをオーバーライドしていません。
-
 ```ruby
-
-  Template: <%= "#{@logs = `tail log/development.log`}".scan(/\s[a-z]+\/\S+/) %>
+  <%= "#{`tail log/development.log`}".scan(/\s[a-z]+\/\S+/) %>
 ```
 
 ## Installation
@@ -25,15 +21,17 @@ group :development do
   gem install 'current_template'
 end
 ```
-And then add:
+And then add this line to app/view/layout/application.html.erb
 
 ```ruby
-<%= show_current_template %>
+<% if Rails.env == 'development' %>
+  <%= show_current_template %>
+<% end %>
 ```
-to your app/view/layout/application.html.erb
 
 ## Contributing
-Help me with README translation!
+
+Help me with translate README!
 
 改良・英訳をしてくださる方募集中です！
 

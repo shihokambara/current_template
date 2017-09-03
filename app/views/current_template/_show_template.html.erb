@@ -1,7 +1,7 @@
 <div class='current_template-container' >
   <small>CurrentTemplateViewer</small>
   <p class='current_template-inner'>
-  Template: <%= "#{@logs = `tail log/development.log`}".scan(/\s[a-z]+\/\S+/) %>
+  Template: <%= "#{`tail log/development.log`}".scan(/\s[a-z]+\/\S+/) %>
   </p>
 </div>
 <style>
