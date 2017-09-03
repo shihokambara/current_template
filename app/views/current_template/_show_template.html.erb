@@ -1,0 +1,25 @@
+<div class='current_template-container' >
+  <small>CurrentTemplateViewer</small>
+  <p class='current_template-inner'>
+  Template: <%= "#{@logs = `tail log/development.log`}".scan(/\s[a-z]+\/\S+/) %>
+  </p>
+</div>
+<style>
+.current_template-container{
+  max-width: 400px;
+	position: fixed;
+	bottom: 10px;
+	background: green;
+	color: #fff;
+	right: 10px;
+	opacity: 0.8;
+	padding: 10px 40px;
+	border-radius: 5px;
+	z-index: 999999;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: 200;
+}
+.current_template-inner{
+margin-top: 20px;
+}
+</style>
