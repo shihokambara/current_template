@@ -28,13 +28,6 @@ And then add this line to app/view/layout/application.html.erb
   <%= show_current_template %>
 <% end %>
 ```
-
-## Contributing
-
-Help me with translate README!
-
-改良・英訳をしてくださる方募集中です！
-
 ## License
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 

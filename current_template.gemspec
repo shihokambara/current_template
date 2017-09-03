@@ -1,15 +1,13 @@
+# coding: utf-8
 $:.push File.expand_path("../lib", __FILE__)
-
-# Maintain your gem's version:
 require "current_template/version"
 
-# Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "current_template"
   s.version     = CurrentTemplate::VERSION
-  s.authors     = ["shihokambara"]
+  s.authors     = ["shiho kambara"]
   s.email       = ["shihokambara@icloud.com"]
-  s.homepage    = "http://www.cantas.co.jp"
+  s.homepage    = "https://github.com/shihokambara/current_template"
   s.summary     = "Get name of the current template file"
   s.description = "Get name of the current template file, including partial template."
   s.license     = "MIT"
