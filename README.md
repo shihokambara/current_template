@@ -2,7 +2,7 @@
 Display name of the current template file, including partial template.
 
 ## Demo
-![demo](https://github.com/shihokambara/current_template/blob/master/demo.gif)
+![demo](https://github.com/shihokambara/current_template/blob/master/screenshot.gif)
 
 ## Feature
 
