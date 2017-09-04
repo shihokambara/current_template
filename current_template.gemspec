@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.authors     = ["shiho kambara"]
   s.email       = ["shihokambara@icloud.com"]
   s.homepage    = "https://github.com/shihokambara/current_template"
-  s.summary     = "Get name of the current template file"
-  s.description = "Get name of the current template file, including partial template."
+  s.summary     = "Display name of the current template file"
+  s.description = "Display name of the current template file, including partial template."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
