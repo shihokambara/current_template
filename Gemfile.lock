@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    current_template (0.1.1)
+    current_template (0.1.2)
 
 GEM
   remote: https://rubygems.org/

@@ -2,15 +2,17 @@
 Display name of the current template file, including partial template.
 
 ## Demo
-![demo](https://github.com/shihokambara/current_template/blob/master/demo.jpg)
+![demo](https://github.com/shihokambara/current_template/blob/master/demo.gif)
 
 ## Feature
 
-This gem inspects log/development.log and gets partial name from it!
-It doesn't override any method!
+This gem inspects `log/development.log` and gets partial name from it!
+It  doesn't override any method.
+
+This gem also supports haml and slim.
 
 ```ruby
-  <%= "#{`tail log/development.log`}".scan(/\s[a-z]+\/\S+/) %>
+  Template: <%= "#{`tail log/development.log`}".scan(/\s[a-z]+\/\S+[erb|haml|slim]\s/) %> # extract data from log file
 ```
 
 ## Installation

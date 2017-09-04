@@ -1,8 +1,8 @@
-<div class='current_template-container' >
+<div class='current_template-container' style='-webkit-user-drag: element;' >
+  <span id="current_template-close" onclick="parentNode.remove()"></span>
   <small>CurrentTemplateViewer</small>
   <p class='current_template-inner'>
   Template: <%= "#{`tail log/development.log`}".scan(/\s[a-z]+\/\S+[erb|haml|slim]\s/) %>
-
   </p>
 </div>
 <style>
@@ -17,10 +17,24 @@
 	padding: 10px 40px;
 	border-radius: 5px;
 	z-index: 999999;
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
 	font-weight: 200;
 }
 .current_template-inner{
 margin-top: 20px;
+}
+#current_template-close{
+  color: #fff;
+  position: absolute;
+  right: 5px;
+  top: 0px;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+#current_template-close:hover{
+  color: #fff;
+}
+#current_template-close:after {
+  content: '×'; /* UTF-8 symbol */
 }
 </style>
