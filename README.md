@@ -17,10 +17,6 @@ It  doesn't override any method.
 
 This gem also supports haml and slim.
 
-```ruby
-  Template: <%= "#{`tail log/development.log`}".scan(/\s[a-z]+\/\S+[erb|haml|slim]\s/) %> # extract data from log file
-```
-
 ## Installation
 Add this line to your application's Gemfile:
 
