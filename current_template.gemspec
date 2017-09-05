@@ -4,7 +4,7 @@ require "current_template/version"
 
 Gem::Specification.new do |s|
   s.name        = "current_template"
-  s.version     = "0.1.2"
+  s.version     = "0.1.3"
   s.authors     = ["shiho kambara"]
   s.email       = ["shihokambara@icloud.com"]
   s.homepage    = "https://github.com/shihokambara/current_template"

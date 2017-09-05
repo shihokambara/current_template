@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    current_template (0.1.2)
+    current_template (0.1.3)
 
 GEM
   remote: https://rubygems.org/
@@ -41,4 +41,4 @@ DEPENDENCIES
   rspec
 
 BUNDLED WITH
-   1.15.3
+   1.16.0.pre.1
