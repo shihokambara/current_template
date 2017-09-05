@@ -1,4 +1,10 @@
+
 # CurrentTemplate
+
+[![Gem Version](https://badge.fury.io/rb/current_template.svg)](https://badge.fury.io/rb/current_template)
+[![Dependency Status](https://gemnasium.com/badges/github.com/shihokambara/current_template.svg)](https://gemnasium.com/github.com/shihokambara/current_template)
+
+
 Display name of the current template file, including partial template.
 
 ## Demo
